@@ -16,15 +16,4 @@ M.setup = function(config)
 	end
 end
 
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
-
-augroup("kanagawa", { clear = true })
-autocmd('kanagawa_load', {
-	group = 'kanagawa',
-	callback = function()
-		M.setup()
-	end
-})
-
 return M

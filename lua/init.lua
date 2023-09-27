@@ -1,7 +1,8 @@
 local M = {}
 
-function M.setup(config)
+vim.api.nvim_create_user_command("KanagawaCompile", function()
 	require("kangawa")
-end
+	vim.api.nvim_exec_autocmds("ColorScheme", { modeline = false })
+end, {})
 
 return M

@@ -66,7 +66,6 @@ return {
 	-- @debug (Debug)                              ; keywords related to debugging
 	-- @label (Label)                              ; GOTO and other labels (e.g. `label:` in C)
 	-- @include (Include)                          ; keywords for including modules (e.g. `import` / `from` in Python)
-	["@include"] = { fg = theme.syn.special3 },
 	-- @exception (Exception)                      ; keywords related to exceptions (e.g. `throw` / `catch`)
 	["@exception"] = { fg = theme.syn.special3 },
 	-- }}}

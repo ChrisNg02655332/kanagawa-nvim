@@ -42,6 +42,7 @@ return {
 		identifier = palette.carp_yellow,
 		fun        = palette.crystal_blue,
 		operator   = palette.boat_yellow2,
+		preproc    = palette.wave_red,
 		statement  = palette.oni_violet1,
 		keyword    = palette.oni_violet1,
 		type       = palette.wave_aqua2,

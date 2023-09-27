@@ -1,5 +1,9 @@
 local theme = require("kanagawa.theme")
 
+local config = {
+	undercurl = true
+}
+
 return {
 	-- editor
 	Normal = { fg = theme.ui.fg, bg = theme.ui.bg },
@@ -8,19 +12,19 @@ return {
 	lCursor = { link = "Cursor" },
 	CursorLine = { bg = theme.ui.bg_p2 },
 	LineNr = { fg = theme.ui.comment },
-	CursorLineNR = {},
+	CursorLineNR = { fg = theme.diag.warning, bg = theme.ui.bg_gutter, bold = true },
 	EndOfBuffer = { fg = theme.ui.bg },
 
 	-- Number column
 	CursorColumn = { link = "CursorLine" },
 	FoldColumn = { fg = theme.ui.nontext, bg = theme.ui.bg_gutter },
 	SignColumn = { bg = theme.ui.bg_gutter },
-	Folded = {},
+	Folded = { fg = theme.ui.special, bg = theme.ui.bg_p1 },
 
 	-- Window/Tab delimiters
 	WinSeparator = { fg = theme.ui.bg_p2, bg = "NONE" },
 	VertSplit = { link = "WinSeparator" },
-	ColorColumn = {},
+	ColorColumn = { bg = theme.ui.bg_p1 },
 	TabLine = { bg = theme.ui.bg_m3, fg = theme.ui.special },
 	TabLineFill = { bg = theme.ui.bg },
 	TabLineSel = { fg = theme.ui.fg_dim, bg = theme.ui.bg_p1 },
@@ -28,30 +32,30 @@ return {
 	-- File Navigation / Searching
 	Directory = { fg = theme.syn.fun },
 	Search = { fg = theme.ui.fg, bg = theme.ui.bg_search },
-	IncSearch = {},
+	IncSearch = { fg = theme.ui.fg_reverse, bg = theme.diag.warning },
 
 	-- Prompt/Status
 	StatusLine = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
 	StatusLineNC = { fg = theme.ui.nontext, bg = theme.ui.bg_m3 },
-	WildMenu = {},
-	Question = {},
-	Title = {},
-	ModeMsg = {},
-	MoreMsg = {},
+	WildMenu = { link = "Pmenu" },
+	Question = { link = "MoreMsg" },
+	Title = { fg = theme.syn.fun, bold = true },
+	ModeMsg = { fg = theme.diag.warning, bold = true },
+	MoreMsg = { fg = theme.diag.info },
 
 	-- Visual aid
-	MatchParen = {},
+	MatchParen = { fg = theme.diag.warning, bold = true },
 	Visual = { bg = theme.ui.bg_visual },
-	VisualNOS = {},
+	VisualNOS = { link = "Visual" },
 	NonText = { fg = theme.ui.nontext },
 
-	Todo = {},
-	Underlined = {},
-	Error = {},
-	ErrorMsg = {},
-	WarningMsg = {},
-	Ignore = {},
-	SpecialKey = {},
+	Todo = { fg = theme.ui.fg_reverse, bg = theme.diag.info, bold = true },
+	Underlined = { fg = theme.syn.special1, underline = true },
+	Error = { fg = theme.diag.error },
+	ErrorMsg = { fg = theme.diag.error },
+	WarningMsg = { fg = theme.diag.warning },
+	Ignore = { link = "NonText" },
+	SpecialKey = { fg = theme.ui.special },
 
 	-- Variable types
 	Constant = { fg = theme.syn.constant },
@@ -66,10 +70,10 @@ return {
 
 	-- Language constructs
 	Statement = { fg = theme.syn.statement },
-	Conditional = {},
-	Repeat = {},
-	Label = {},
-	Operator = { fg = theme.syn.operator },
+	--  Conditional	if, then, else, endif, switch, etc.
+	--  Repeat		for, do, while, etc.
+	--  Label		case, default, etc.
+	--  Operator	"sizeof", "+", "*", etc.	Operator = { fg = theme.syn.operator },
 	Keyword = { fg = theme.syn.keyword },
 	Exception = { fg = theme.syn.special2 },
 	Comment = { fg = theme.syn.comment },
@@ -82,12 +86,13 @@ return {
 	--  Macro		same as Define
 	--  PreCondit	preprocessor #if, #else, #endif, etc.
 
-	Special = {},
-	SpecialChar = {},
-	Tag = {},
-	Delimiter = {},
-	SpecialComment = {},
-	Debug = {},
+	Special = { fg = theme.syn.special1 },
+	--  SpecialChar	special character in a constant
+	--  Tag		you can use CTRL-] on this
+	--  Delimiter	character that needs attention	
+	Delimiter = { fg = theme.syn.punct },
+	--  SpecialComment	special things inside a comment
+	--  Debug		debugging statements
 
 	Whitespace = { fg = theme.ui.whitespace },
 
@@ -107,10 +112,10 @@ return {
 	PmenuThumb = { bg = theme.ui.pmenu.bg_thumb },
 
 	-- Spelling
-	SpellBad = {},
-	SpellCap = {},
-	SpellLocal = {},
-	SpellRare = {},
+	SpellBad = { undercurl = config.undercurl, underline = not config.undercurl, sp = theme.diag.error },
+	SpellCap = { undercurl = config.undercurl, underline = not config.undercurl, sp = theme.diag.warning },
+	SpellLocal = { undercurl = config.undercurl, underline = not config.undercurl, sp = theme.diag.warning },
+	SpellRare = { undercurl = config.undercurl, underline = not config.undercurl, sp = theme.diag.warning },
 
 	-- vcs
 	diffAdded = { fg = theme.vcs.added },

@@ -13,8 +13,8 @@ return {
 	-- Telescope
 	TelescopeBorder = { fg = theme.ui.float.fg_border, bg = theme.ui.bg },
 	TelescopeTitle = { fg = theme.ui.special },
-	TelescopeSelection = { link = 'CursorLine' },
-	TelescopeSelectionCaret = { link = 'CursorLineNr' },
+	TelescopeSelection = { link = "CursorLine" },
+	TelescopeSelectionCaret = { link = "CursorLineNr" },
 	TelescopeResultsClass = { link = "Structure" },
 	TelescopeResultsStruct = { link = "Structure" },
 	TelescopeResultsField = { link = "@field" },
@@ -122,4 +122,13 @@ return {
 	NavicIconsTypeParameter = { link = "Identifier" },
 	NavicText = { fg = theme.ui.fg },
 	NavicSeparator = { fg = theme.ui.fg },
+
+	NoiceCmdlineIcon = { link = "Normal" },
+	NoiceCmdlinePopupTitle = { link = "Normal" },
+	NoiceCmdlinePopupBorder = { link = "Normal" },
+	NoiceCompletionItemMenu = { link = "Normal" },
+	NoiceFormatConfirmDefault = { link = "Normal" },
+	NoiceConfirmPopupTitle = { link = "Normal" },
+	NoiceConfirmBorder = { link = "Normal" },
+	NoiceConfirmTitle = { link = "Normal" },
 }

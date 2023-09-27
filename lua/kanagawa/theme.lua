@@ -75,4 +75,26 @@ return {
 		change = palette.winter_blue,
 		text   = palette.winter_yellow,
 	},
+
+	term = {
+		palette.sumi_ink0,    -- black
+		palette.autumn_red,   -- red
+		palette.autumn_green, -- green
+		palette.boat_yellow2, -- yellow
+		palette.crystal_blue, -- blue
+		palette.oni_violet,   -- magenta
+		palette.wave_aqua1,   -- cyan
+		palette.old_white,    -- white
+		palette.fuji_gray,    -- bright black
+		palette.samurai_red,  -- bright red
+		palette.spring_green, -- bright green
+		palette.carp_yellow,  -- bright yellow
+		palette.spring_blue,  -- bright blue
+		palette.spring_violet1, -- bright magenta
+		palette.wave_aqua2,   -- bright cyan
+		palette.fuji_white,   -- bright white
+		palette.surimi_orange, -- extended color 1
+		palette.peach_red,    -- extended color 2
+	},
+
 }

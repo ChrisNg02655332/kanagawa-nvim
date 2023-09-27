@@ -1,6 +1,8 @@
+local theme = require "kanagawa.theme"
+
 local M = {}
 
-M.setup = function(config)
+M.load = function(config)
 	if vim.g.colors_name then
 		vim.cmd("hi clear")
 	end
@@ -13,6 +15,10 @@ M.setup = function(config)
 		for hl, spec in pairs(mod) do
 			vim.api.nvim_set_hl(0, hl, spec)
 		end
+	end
+
+	for i, tcolor in ipairs(theme.term) do
+		vim.g["terminal_color_" .. i - 1] = tcolor
 	end
 end
 

@@ -9,7 +9,7 @@ M.setup = function(config)
 	vim.o.termguicolors = true
 
 	for _, highlight in ipairs({ "editor", "plugins", "lsp", "treesitter" }) do
-		local mod = require("kangawa." .. highlight)
+		local mod = require("kanagawa." .. highlight)
 		for hl, spec in pairs(mod) do
 			vim.api.nvim_set_hl(0, hl, spec)
 		end

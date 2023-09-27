@@ -104,4 +104,12 @@ return {
 	SpellCap = {},
 	SpellLocal = {},
 	SpellRare = {}
+
+	-- vcs
+	diffAdded = { fg = theme.vcs.added },
+	diffRemoved = { fg = theme.vcs.removed },
+	diffDeleted = { fg = theme.vcs.removed },
+	diffChanged = { fg = theme.vcs.changed },
+	diffOldFile = { fg = theme.vcs.removed },
+	diffNewFile = { fg = theme.vcs.added },
 }

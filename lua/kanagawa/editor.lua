@@ -75,6 +75,13 @@ return {
 	Comment = { fg = theme.syn.comment },
 	Type = { fg = theme.syn.type },
 
+	-- *PreProc	generic Preprocessor
+	PreProc = { fg = theme.syn.preproc },
+	--  Include	preprocessor #include
+	--  Define		preprocessor #define
+	--  Macro		same as Define
+	--  PreCondit	preprocessor #if, #else, #endif, etc.
+
 	Special = {},
 	SpecialChar = {},
 	Tag = {},

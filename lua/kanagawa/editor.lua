@@ -110,7 +110,7 @@ return {
 	SpellBad = {},
 	SpellCap = {},
 	SpellLocal = {},
-	SpellRare = {}
+	SpellRare = {},
 
 	-- vcs
 	diffAdded = { fg = theme.vcs.added },

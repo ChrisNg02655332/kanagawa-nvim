@@ -1,4 +1,4 @@
-local palette = require("kangawa.palette")
+local palette = require("kanagawa.palette")
 
 return {
 	ui = {

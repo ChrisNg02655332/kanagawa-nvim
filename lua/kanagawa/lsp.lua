@@ -1,4 +1,4 @@
-local theme = require("kangawa.theme")
+local theme = require("kanagawa.theme")
 
 return {
 	-- ["@lsp.type.class"] = { link = "Structure" },

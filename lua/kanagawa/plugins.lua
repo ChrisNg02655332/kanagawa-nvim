@@ -21,6 +21,9 @@ return {
 	TelescopeResultsMethod = { link = "Function" },
 	TelescopeResultsVariable = { link = "@variable" },
 
+	-- IndentBlankline
+	IblScope = { link = "Function" },
+
 	-- NeoTree
 	NeoTreeTabInactive = { link = "TabLine" },
 	NeoTreeTabActive = { link = "TabLineSel" },

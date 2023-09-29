@@ -21,13 +21,6 @@ return {
 	TelescopeResultsMethod = { link = "Function" },
 	TelescopeResultsVariable = { link = "@variable" },
 
-	-- IndentBlankline
-	IndentBlanklineChar = { fg = theme.ui.whitespace },
-	IndentBlanklineSpaceChar = { fg = theme.ui.whitespace },
-	IndentBlanklineSpaceCharBlankline = { fg = theme.ui.whitespace },
-	IndentBlanklineContextChar = { fg = theme.ui.special },
-	IndentBlanklineContextStart = { sp = theme.ui.special, underline = true },
-
 	-- NeoTree
 	NeoTreeTabInactive = { link = "TabLine" },
 	NeoTreeTabActive = { link = "TabLineSel" },

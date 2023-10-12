@@ -6,25 +6,25 @@ kanagawa.normal = {
 	a = { bg = theme.syn.fun, fg = theme.ui.bg_m3 },
 	b = { bg = theme.diff.change, fg = theme.syn.fun },
 	c = { bg = theme.ui.bg_p1, fg = theme.ui.fg },
-	z = { bg = theme.ui.bg, fg = theme.ui.fun }
+	z = { bg = theme.ui.bg, fg = theme.syn.fun }
 }
 
 kanagawa.insert = {
 	a = { bg = theme.diag.ok, fg = theme.ui.bg },
 	b = { bg = theme.ui.bg, fg = theme.diag.ok },
-	z = { bg = theme.ui.bg, fg = theme.ui.ok }
+	z = { bg = theme.ui.bg, fg = theme.syn.ok }
 }
 
 kanagawa.command = {
 	a = { bg = theme.syn.operator, fg = theme.ui.bg },
 	b = { bg = theme.ui.bg, fg = theme.syn.operator },
-	z = { bg = theme.ui.bg, fg = theme.ui.operator }
+	z = { bg = theme.ui.bg, fg = theme.syn.operator }
 }
 
 kanagawa.visual = {
 	a = { bg = theme.syn.keyword, fg = theme.ui.bg },
 	b = { bg = theme.ui.bg, fg = theme.syn.keyword },
-	z = { bg = theme.ui.bg, fg = theme.ui.keyword }
+	z = { bg = theme.ui.bg, fg = theme.syn.keyword }
 }
 
 kanagawa.replace = {

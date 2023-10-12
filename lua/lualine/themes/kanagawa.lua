@@ -12,7 +12,7 @@ kanagawa.normal = {
 kanagawa.insert = {
 	a = { bg = theme.diag.ok, fg = theme.ui.bg },
 	b = { bg = theme.ui.bg, fg = theme.diag.ok },
-	z = { bg = theme.ui.bg, fg = theme.syn.ok }
+	z = { bg = theme.ui.bg, fg = theme.diag.ok }
 }
 
 kanagawa.command = {

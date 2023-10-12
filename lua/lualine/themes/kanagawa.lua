@@ -3,7 +3,8 @@ local theme = require("kanagawa.theme")
 local kanagawa = {}
 
 kanagawa.normal = {
-	a = { bg = theme.syn.fun, fg = theme.ui.bg_m3 },
+	-- a = { bg = theme.syn.fun, fg = theme.ui.bg_m3 },
+	a = { bg = theme.ui.bg_p1, fg = theme.ui.fg },
 	b = { bg = theme.diff.change, fg = theme.syn.fun },
 	c = { bg = theme.ui.bg_p1, fg = theme.ui.fg },
 }

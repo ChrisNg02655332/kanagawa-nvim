@@ -1,1 +1,1 @@
-require("kanagawa.init").load()
+require("kanagawa").load()

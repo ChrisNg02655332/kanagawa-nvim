@@ -53,7 +53,7 @@ function M.setup(colors, config)
 		-- Substitute	|:substitute| replacement text highlighting.
 		Substitute = { fg = theme.ui.fg, bg = theme.vcs.removed },
 		-- LineNr		Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-		LineNr = { fg = theme.ui.nontext, bg = theme.ui.bg_gutter },
+		LineNr = { fg = theme.ui.nontext },
 		-- LineNrAbove	Line number for when the 'relativenumber' option is set, above the cursor line.
 		-- LineNrBelow	Line number for when the 'relativenumber' option is set, below the cursor line.
 		-- CursorLineNr	Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
